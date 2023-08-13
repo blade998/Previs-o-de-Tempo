@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: cornflowerblue;
+    background-image:url(src/ceu-sobre-as-nuvens-nuvens-cinematograficas-papel-de-parede-5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Quicksand', sans-serif; ;
+    
+}
+
+
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card{
+    display: flex;
+  background-color: rgba(128, 128, 128, 0.6); /* Fundo cinza com mais opacidade */
+  width: 450px;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px white;
+  backdrop-filter: blur(10px); /* Desfoque no fundo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+input{
+    width: 70%;
+    height: 5%;
+    padding: 5px;
+    border-radius: 15px;
+    border:3px solid black;
+}
+
+
+img{
+ width: 100px;
+ height: 100px;
+
+
+
+}
+
+.data{
+    flex: 1;
+    font-size: larger;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+
+}
+
+.city{
+ height: 10%;
+}
+.temperatura-min{
+flex: 1;
+text-align: center;
+}
+
+.temperatura-max {
+    flex: 1;
+    text-align: center;
+}
+.ceu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+#temp{
+    display: flex;
+    gap: 5px;
+    
+}
+
+
+button {
+    background-color:#325459 ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {opacity: 1}
+
+
+
+
+@media(max-width:540px){
+  .card{
+    width: 90%;
+    margin: 10px;
+  }
+  input{
+    width: 90%;
+  }
+}
+
+
+.flags{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items:start ;
+   
+  
+}
+
